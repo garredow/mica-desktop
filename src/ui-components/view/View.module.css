@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 15px;
+  flex: 1;
+}
+
+.titlebar {
+  height: 25px;
+  -webkit-app-region: drag;
+}

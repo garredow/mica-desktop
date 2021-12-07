@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  cursor: pointer;
+
+  opacity: 0.75;
+  transition: opacity 500ms;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.root:hover {
+  opacity: 1;
+}
+
+.root.primary {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
+
+.root.secondary {
+  background-color: transparent;
+  color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+}
+
+.root[disabled] {
+  opacity: 0.3;
+}
+
+.fullWidth {
+  width: 100%;
+}
